@@ -14,9 +14,9 @@
 - git restore <filename>                      Restore a deleted file
 - git reset --hard <commit-hash>              Roll back project history
 
-+ pwd                                         Where am I?
-+ ls                                          List the files here.
-+ cd folder                                   Go into a folder.
++ pwd                                         Where am I
++ ls                                          List the files here
++ cd folder                                   Go into a folder
 + cd ..                                       Go one folder up
 + clear                                       Clean the screen 
 ```
