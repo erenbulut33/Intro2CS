@@ -1,19 +1,14 @@
-city = ("Poznan", "Poland", 52.41, 16.93)
-print("Name of the country is:")
-print(city[1])
-print("Latitude of the city is:")
-print(city[-1])
-print(type(city))
+mine = {"Pierogi", "Sarma", "Borscht", "Dolma", "Zapiekanka"}
+friend = {"Sushi", "Tacos", "Borscht", "Dolma", "Pizza"}
 
-# Unpacking the tuple
-city_name, country, latitude, longitude = city
+print("Our favorite foods are:")
+print(mine.union(friend))
 
-print(city_name)
-print(country)
+print("Our common favorite foods are:")
+print(mine.intersection(friend))
 
+print("Foods I like but my friend doesn't:")
+print(mine.difference(friend))
 
-city_list = list(city)
-city_list[1] = "Hungary"
-city_updated = tuple(city_list)
-
-print(city_updated)
+print("Foods only one of us likes:")
+print(mine.symmetric_difference(friend))
