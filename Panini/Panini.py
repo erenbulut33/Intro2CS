@@ -1,14 +1,18 @@
-mine = {"Pierogi", "Sarma", "Borscht", "Dolma", "Zapiekanka"}
-friend = {"Sushi", "Tacos", "Borscht", "Dolma", "Pizza"}
+# This is a dictionary of English words and their Turkish translations
+words = {"cat": "kedi", "horse": "at", "bird": "kuş", "lion": "aslan"}
+print(words["lion"])
+print(len(words))
 
-print("Our favorite foods are:")
-print(mine.union(friend))
+# Adding new word to the dictionary, and updating existing word
+words.update({"fish": "balık"})
+words.update({"cat": "kedicik"})
+print(words)
 
-print("Our common favorite foods are:")
-print(mine.intersection(friend))
+# Adding two more words to the dictionary
+words.update({"parrot": "papağan", "bat": "yarasa"})
+print(words)
 
-print("Foods I like but my friend doesn't:")
-print(mine.difference(friend))
-
-print("Foods only one of us likes:")
-print(mine.symmetric_difference(friend))
+# Printing the keys, values, and items of the dictionary
+print(list(words.keys()))
+print(list(words.values()))
+print(list(words.items()))
