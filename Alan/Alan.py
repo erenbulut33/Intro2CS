@@ -1,14 +1,11 @@
-language = "Turkish"
-if language == "English":
-    print("Hello!")
-elif language == "Spanish":
-    print("Hola!")
-elif language == "Polish":
-    print("Cześć!")
-elif language == "German":
-    print("Hallo!")
-# Adding a fifth language
-elif language == "Turkish":
-    print("Selam!")
+word = "bus"
+irregular_plural = {"child": "children", "mouse": "mice"}
+if word in irregular_plural:
+    plural = irregular_plural[word]
+    print(plural)
+elif word.endswith(("s", "x", "z")):
+    print(word + "es")
+elif word.endswith("y") and word[-2] not in 'aeiou':
+    print(word[: -1] + "ies")
 else:
-    print("I do not know this language yet.")
+    print(word + "s")
