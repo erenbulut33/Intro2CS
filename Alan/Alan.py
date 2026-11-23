@@ -1,20 +1,14 @@
-# Defining age variable
-age = 26
-if age <= 12:
-    print("Child Ticket")
-else: 
-    print("Adult Ticket")
-
-# Defining is_student variable
-is_student = True
-if is_student:
-    print("Student Discount")
+language = "Turkish"
+if language == "English":
+    print("Hello!")
+elif language == "Spanish":
+    print("Hola!")
+elif language == "Polish":
+    print("Cześć!")
+elif language == "German":
+    print("Hallo!")
+# Adding a fifth language
+elif language == "Turkish":
+    print("Selam!")
 else:
-    print("No Student Discount")
-
-# Defining day variable
-day = "Monday"
-if day == "Saturday":
-    print("Weekend Price")
-else:
-    print("Weekday Price")
+    print("I do not know this language yet.")
